@@ -1,0 +1,129 @@
+.box-size {
+    width: 130px;
+    height: 130px;
+    background-color: #2196F3;
+    transition: 1s 100ms;
+}
+  
+.box-size:hover {
+    width: 230px;
+    height: 230px;
+}
+
+.box-spin {
+    margin: 100px;
+    border: 1px solid #000;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition: 2s;
+}
+
+.box-spin:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-180deg);
+}
+
+.box-colour {
+    width: 130px;
+    height: 130px;
+    color: blueviolet;
+    background-color: #61e49c;
+    transition: 1s 100ms;
+    text-align: center;
+}
+
+.box-colour:hover {
+    color: cornflowerblue;
+    background-color: rgb(154, 33, 158);
+    border-radius: 50%;
+}
+
+button {
+    border: 0;
+    background: #0087cc;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #006599;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+}
+button:active {
+    box-shadow: 0 2px 0 #006599;
+    transform: translateY(3px);
+}
+
+
+.animated-button {
+  margin: 24px 24px 24px 0;
+  border-radius: 8px;
+  background-color: #916CFA;
+  box-shadow: none;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+.animated-button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: #FFFFFF;
+}
+
+.animated-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.animated-button:hover span {
+  padding-right: 25px;
+}
+
+.animated-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.container {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-rows: auto;
+}
+
+#code {
+  margin-right: 24px;
+  padding: 0;
+  grid-column: 1;
+  grid-row: 1/2;
+}
+
+h1 {
+  margin: 0;
+}
+
+#html {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#css {
+  grid-column: 2;
+  grid-row: 2;
+}

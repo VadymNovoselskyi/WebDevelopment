@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="flipBox.css">
+    <link rel="stylesheet" href="../../../highlight/styles/vs2015.min.css">
+    <script src="../../../highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Flip box</title>
+</head>
+<body>
+    <a href="../../../collectionOfAllMyWebsites/index.html#flipBox">
+        <button class="animated-button">
+            <span>Go back</span>
+        </button>
+        </a>
+        <div class="container">
+            <div id="code">
+            <!-- horizontal -->
+    <div class="flip-box" id="flip-box-horizontal">
+        <div class="flip-box-inner" id="flip-box-inner-horizontal">
+            <div class="flip-box-front" id="flip-box-front-horizontal">
+                <h2>Front, horizontal</h2>
+            </div>
+            <div class="flip-box-back" id="flip-box-back-horizontal">
+                <h2>Back, horizontal</h2>
+            </div>
+        </div>
+    </div>
+    <!-- vertical -->
+    <div class="flip-box" id="flip-box-vertical">
+        <div class="flip-box-inner" id="flip-box-inner-vertical">
+            <div class="flip-box-front" id="flip-box-front-vertical">
+                <h2>Front, vertical</h2>
+            </div>
+            <div class="flip-box-front" id="flip-box-back-vertical">
+                <h2>Back, vertical</h2>
+            </div>
+        </div>
+    </div>
+            </div>
+        <pre id="html">
+            <h1>HTML</h1>
+            <code>
+&lt;!-- horizontal --&gt;
+&lt;div class="flip-box" id="flip-box-horizontal"&gt;
+    &lt;div class="flip-box-inner" id="flip-box-inner-horizontal"&gt;
+        &lt;div class="flip-box-front" id="flip-box-front-horizontal"&gt;
+            &lt;h2&gt;Front, horizontal&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div class="flip-box-back" id="flip-box-back-horizontal"&gt;
+            &lt;h2&gt;Back, horizontal&lt;/h2&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- vertical --&gt;
+&lt;div class="flip-box" id="flip-box-vertical"&gt;
+    &lt;div class="flip-box-inner" id="flip-box-inner-vertical"&gt;
+        &lt;div class="flip-box-front" id="flip-box-front-vertical"&gt;
+            &lt;h2&gt;Front, vertical&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div class="flip-box-front" id="flip-box-back-vertical"&gt;
+            &lt;h2&gt;Back, vertical&lt;/h2&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+        </pre>
+        <pre id="css">
+            <h1>CSS</h1>
+            <code>
+.flip-box {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 50px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* horizontal */
+
+#flip-box-horizontal:hover #flip-box-inner-horizontal {
+    transform: rotateY(180deg);
+}
+
+#flip-box-front-horizontal {
+    background-color: #bbb;
+    color: black;
+}
+#flip-box-back-horizontal {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* vertical */
+
+#flip-box-vertical:hover #flip-box-inner-vertical {
+    transform: rotateX(180deg);
+}
+
+#flip-box-front-vertical {
+    background-color: #000;
+    color: #fff;
+}
+#flip-box-back-vertical {
+    background-color: #bbb;
+    color: dodgerblue;
+    transform: rotateX(180deg);
+
+            </code>
+        </pre>
+        </div>
+</body>
+</html>

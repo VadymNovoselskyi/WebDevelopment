@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="toolTip.css">
+    <title>Tool tip</title>
+    <link rel="stylesheet" href="../../../highlight/styles/vs2015.min.css">
+    <script src="../../../highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <a href="../../../collectionOfAllMyWebsites/index.html#toolTip">
+        <button class="animated-button">
+            <span>Go back</span>
+        </button>
+        </a>
+        <div class="container">
+            <div id="code"> 
+                    <span class="side-text">Hover over "?" marks</span>
+                    <div class="tooltip top">
+                        <span class="question-mark">?</span>
+                        <span class="tooltip-text-top">Tooltip text at top</span>
+                    </div>
+                    <div class="tooltip right">
+                        <span class="question-mark">?</span>
+                        <span class="tooltip-text-right">Tooltip text at right</span>
+                    </div>
+                    <div class="tooltip bottom">
+                        <span class="question-mark">?</span>
+                        <span class="tooltip-text-bottom">Tooltip text at bottom</span>
+                    </div>
+                    <div class="tooltip left">
+                        <span class="question-mark">?</span>
+                        <span class="tooltip-text-left">Tooltip text at left</span>
+                    </div>
+            </div>
+        <pre id="html">
+            <h1>HTML</h1>
+            <code>
+&lt;main&gt;    
+    &lt;span class="side-text"&gt;Hover over "?" marks&lt;/span&gt;
+    &lt;div class="tooltip top"&gt;
+        &lt;span class="question-mark"&gt;?&lt;/span&gt;
+        &lt;span class="tooltip-text-top"&gt;Tooltip text at top&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="tooltip right"&gt;
+        &lt;span class="question-mark"&gt;?&lt;/span&gt;
+        &lt;span class="tooltip-text-right"&gt;Tooltip text at right&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="tooltip bottom"&gt;
+        &lt;span class="question-mark"&gt;?&lt;/span&gt;
+        &lt;span class="tooltip-text-bottom"&gt;Tooltip text at bottom&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="tooltip left"&gt;
+        &lt;span class="question-mark"&gt;?&lt;/span&gt;
+        &lt;span class="tooltip-text-left"&gt;Tooltip text at left&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/main&gt;
+            </code>
+        </pre>
+        <pre id="css">
+            <h1>CSS</h1>
+            <code>
+main {
+    padding: 50px 20px;
+}
+.question-mark {
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 20px;
+}
+.side-text {
+    font-size: 20px;
+    margin: 100px 20px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    padding: 14px;
+    margin: 0 100px;
+}
+
+/* top */
+
+.top .tooltip-text-top {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    margin-left: -60px;
+    padding: 5px 0;
+    border-radius: 6px;
+    bottom: 100%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.top .tooltip-text-top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.top:hover .tooltip-text-top {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* right */
+
+.right .tooltip-text-right {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    margin-left: -60px;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: 0;
+    left: 250%;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.right .tooltip-text-right::after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.right:hover .tooltip-text-right {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* bottom */
+
+.bottom .tooltip-text-bottom {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    margin-left: -60px;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: 100%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.bottom .tooltip-text-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.bottom:hover .tooltip-text-bottom {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* left */
+
+.left .tooltip-text-left {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    margin-left: -60px;
+    padding: 5px 0;
+    border-radius: 6px;
+    bottom: 20%;
+    right: 100%;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.left .tooltip-text-left::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #555;
+}
+
+.left:hover .tooltip-text-left {
+    visibility: visible;
+    opacity: 1;
+
+            </code>
+        </pre>
+        </div>
+</body>
+</html>

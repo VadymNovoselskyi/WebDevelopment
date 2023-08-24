@@ -1,0 +1,154 @@
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #4a4a4d;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+th,
+td {
+    padding: 10px 15px;
+    vertical-align: middle;
+}
+thead {
+    background: #395870;
+    background: linear-gradient(#49708f, #293f50);
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+th:first-child {
+    border-top-left-radius: 5px;
+    text-align: left;
+}
+th:last-child {
+    border-top-right-radius: 5px;
+}
+tbody tr:nth-child(even) {
+    background: #f0f0f2;
+}
+td {
+    border-bottom: 1px solid #cecfd5;
+    border-right: 1px solid #cecfd5;
+}
+td:first-child {
+    border-left: 1px solid #cecfd5;
+}
+.book-title {
+    color: #395870;
+    display: block;
+}
+.text-offset {
+    color: #7c7c80;
+    font-size: 12px;
+}
+.item-stock,
+.item-qty {
+    text-align: center;
+}
+.item-price {
+    text-align: right;
+}
+.item-multiple {
+    display: block;
+}
+tfoot {
+    text-align: right;
+}
+tfoot tr:last-child {
+    background: #f0f0f2;
+    color: #395870;
+    font-weight: bold;
+}
+tfoot tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+tfoot tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+
+h1 {
+    color: #fff;
+    font-size: 48px;
+    padding: 100px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #ababb6;
+}
+
+::selection {
+    background: #000
+  }
+
+
+
+.animated-button {
+    margin: 24px 24px 24px 0;
+    border-radius: 8px;
+    background-color: #916CFA;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+  }
+  
+  .animated-button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: #FFFFFF;
+  }
+
+  .animated-button > a {
+    margin: 0;
+    padding: 28px 40px;
+}
+  
+  .animated-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;;;
+    transition: 0.5s;
+  }
+  
+  .animated-button:hover span {
+    padding-right: 25px;
+  }
+  
+  .animated-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+.container {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-rows: auto;
+}
+
+#code {
+  margin-right: 24px;
+  padding: 0;
+  grid-column: 1;
+  grid-row: 1/2;
+}
+
+h1 {
+  margin: 0;
+}
+
+#html {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#css {
+  grid-column: 2;
+  grid-row: 2;
+}

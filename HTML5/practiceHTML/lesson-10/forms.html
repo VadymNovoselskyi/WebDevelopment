@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="../../../highlight/styles/vs2015.min.css">
+    <script src="../../../highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Forms</title>
+</head>
+<body>
+    <header>
+        <a href="../../../collectionOfAllMyWebsites/index.html#forms">
+            <button class="animated-button">
+                <span>Go back</span>
+            </button>
+        </a>
+    </header>
+    <div class="container">
+        <div id="code">
+            <div>
+                <input type="text" name="test" autofocus>
+            </div>
+            <div>
+                <input type="text" name="username" class="top">
+            </div>
+            <div>
+                <textarea name="comment">Add your comment here</textarea>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="day" value="Friday" checked> Friday
+                </label>
+                <label>
+                    <input type="radio" name="day" value="Saturday"> Saturday
+                </label>
+                <label>
+                    <input type="radio" name="day" value="Sunday"> Sunday
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="day" value="Friday" checked> Friday
+                </label>
+                <label>
+                    <input type="checkbox" name="day" value="Saturday"> Saturday
+                </label>
+                <label>
+                    <input type="checkbox" name="day" value="Sunday"> Sunday
+                </label>
+            </div>
+            <div>
+                <select name="day">
+                    <option value="Friday" selected>Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" name="submit" value="Send">
+                <button name="submit">
+                    <strong>Send Us</strong> a Message
+                </button>
+            </div>
+            <div>
+                <input type="file" name="file">
+            </div>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div>
+                <fieldset>
+                    <label>
+                      Username
+                      <input type="text" name="username">
+                    </label>
+                    <label>
+                      Password
+                      <input type="text" name="password">
+                    </label>
+                  </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Login</legend>
+                    <label>
+                      Username
+                      <input type="text" name="username">
+                    </label>
+                    <label>
+                      Password
+                      <input type="text" name="password">
+                    </label>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Login</legend>
+                    <label>
+                      Username
+                      <input type="text" name="username" placeholder="Your username">
+                    </label>
+                    <label>
+                      Password
+                      <input type="text" name="password" placeholder="Your password">
+                    </label>
+                </fieldset>
+            </div>
+        </div>
+    <pre id="html">
+        <h1>HTML</h1>
+        <code>
+    &lt;div&gt;
+    &lt;input type="text" name="test" autofocus&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;input type="text" name="username" class="top"&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;textarea name="comment"&gt;Add your comment here&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;label&gt;
+        &lt;input type="radio" name="day" value="Friday" checked&gt; Friday
+    &lt;/label&gt;
+    &lt;label&gt;
+        &lt;input type="radio" name="day" value="Saturday"&gt; Saturday
+    &lt;/label&gt;
+    &lt;label&gt;
+        &lt;input type="radio" name="day" value="Sunday"&gt; Sunday
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;label&gt;
+        &lt;input type="checkbox" name="day" value="Friday" checked&gt; Friday
+    &lt;/label&gt;
+    &lt;label&gt;
+        &lt;input type="checkbox" name="day" value="Saturday"&gt; Saturday
+    &lt;/label&gt;
+    &lt;label&gt;
+        &lt;input type="checkbox" name="day" value="Sunday"&gt; Sunday
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;select name="day"&gt;
+        &lt;option value="Friday" selected&gt;Friday&lt;/option&gt;
+        &lt;option value="Saturday"&gt;Saturday&lt;/option&gt;
+        &lt;option value="Sunday"&gt;Sunday&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;input type="submit" name="submit" value="Send"&gt;
+    &lt;button name="submit"&gt;
+        &lt;strong&gt;Send Us&lt;/strong&gt; a Message
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;input type="file" name="file"&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;label for="username"&gt;Username:&lt;/label&gt;
+    &lt;input type="text" name="username" id="username"&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;fieldset&gt;
+        &lt;label&gt;
+            Username
+            &lt;input type="text" name="username"&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            Password
+            &lt;input type="text" name="password"&gt;
+        &lt;/label&gt;
+        &lt;/fieldset&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Login&lt;/legend&gt;
+        &lt;label&gt;
+            Username
+            &lt;input type="text" name="username"&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            Password
+            &lt;input type="text" name="password"&gt;
+        &lt;/label&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Login&lt;/legend&gt;
+        &lt;label&gt;
+            Username
+            &lt;input type="text" name="username" placeholder="Your username"&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            Password
+            &lt;input type="text" name="password" placeholder="Your password"&gt;
+        &lt;/label&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;
+        </code>
+    </pre>
+    </div>
+</body>
+</html>

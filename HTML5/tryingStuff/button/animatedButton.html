@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="animatedButton.css">
+    <link rel="stylesheet" href="../../../highlight/styles/vs2015.min.css">
+    <script src="../../../highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Animated button</title>
+</head>
+<body>
+    <div class="container">
+        <div id="code">
+            <a href="../../../collectionOfAllMyWebsites/index.html#onHover">
+                <button class="animated-button">
+                    <span>Go back</span>
+                </button>
+            </a>
+        </div>
+    <pre id="html">
+        <h1>HTML</h1>
+        <code>
+&lt;a href="../../../collectionOfAllMyWebsites/index.html#onHover"&gt;
+    &lt;button class="animated-button"&gt;
+        &lt;span&gt;Go back&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/a&gt;
+        </code>
+    </pre>
+    <pre id="css">
+        <h1>CSS</h1>
+        <code>
+.animated-button {
+    border-radius: 8px;
+    background-color: #916CFA;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+}
+  
+.animated-button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: #FFFFFF;
+}
+  
+.animated-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.animated-button:hover span {
+    padding-right: 25px;
+}
+  
+.animated-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+        </code>
+    </pre>
+    </div>
+</body>
+</html>

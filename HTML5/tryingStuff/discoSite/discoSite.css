@@ -1,0 +1,82 @@
+body {
+    animation: disco 3s infinite;
+}
+
+@keyframes disco {
+    0% {
+        background-color: red;
+    }
+    10% {
+        background-color: yellow;
+    }
+    20% {
+        background-color: green;
+    }
+    30% {
+        background-color: rgb(47, 171, 202);
+    }
+    40% {
+        background-color: blue;
+    }
+    50% {
+        background-color: violet;
+    }
+    60% {
+        background-color: blue;
+    }
+    70% {
+        background-color: rgb(47, 171, 202);
+    }
+    80% {
+        background-color: green;
+    }
+    90% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+h1 {
+    text-align: center;
+    padding: 40vh;
+    font-size: 50px;
+}
+.animated-button {
+    border: 1px solid #000000;
+    animation: disco 3s infinite;
+    border-radius: 8px;
+    background-color: #916CFA;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+}
+  
+.animated-button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: #FFFFFF;
+}
+  
+.animated-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.animated-button:hover span {
+    padding-right: 25px;
+}
+  
+.animated-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

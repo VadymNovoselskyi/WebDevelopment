@@ -1,0 +1,32 @@
+a {
+    color: #000;
+}
+
+main {
+    padding: 48px;
+    columns: 4;
+    column-gap: 24px;
+}
+
+.projects > div {
+  background-color: rgba(127, 102, 204, 0.8);
+  border: 3px solid rgb(127, 102, 204, 1);
+  padding: 24px 24px 36px 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+h2 {
+    margin: 48px 0;
+    text-align: center;
+}
+
+
+.websites > div {
+    background-color: rgba(127, 102, 204, 0.8);
+    border: 3px solid rgb(127, 102, 204, 1);
+    padding: 24px 24px 36px 24px;
+    text-align: center;
+    margin-bottom: 24px;
+    display: inline-block;
+}

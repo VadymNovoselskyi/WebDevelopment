@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="keyframe.css">
+    <link rel="stylesheet" href="../../highlight/styles/vs2015.min.css">
+    <script src="../../highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Keyframe</title>
+</head>
+<body>
+  <header>
+    <a href="../../collectionOfAllMyWebsites/index.html#keyframe">
+      <button class="animated-button">
+          <span>Go back</span>
+      </button>
+      </a>
+  </header>
+  <div class="container">
+    <div id="code">
+      <main>
+        <div class="circle"></div>
+        <div class="loader-container">
+          <div class="loader-1"></div>
+        </div>
+        <div class="loader-container">
+          <div class="loader-2"></div>
+        </div>
+        <div class="loader-container">
+          <div class="loader-3">
+            <div class="item-1"></div>
+            <div class="item-2"></div>
+            <div class="item-3"></div>
+            <div class="item-4"></div>
+            <div class="item-5"></div>
+          </div>
+        </div>
+        <div class="loader-container">
+          <div class="loader-4"></div>
+        </div>    
+      </main>
+    </div>
+    <pre id="html">
+      <h1>HTML</h1>
+      <code>
+&lt;main&gt;
+  &lt;div class="circle"&gt;&lt;/div&gt;
+  &lt;div class="loader-container"&gt;
+    &lt;div class="loader-1"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="loader-container"&gt;
+    &lt;div class="loader-2"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="loader-container"&gt;
+    &lt;div class="loader-3"&gt;
+      &lt;div class="item-1"&gt;&lt;/div&gt;
+      &lt;div class="item-2"&gt;&lt;/div&gt;
+      &lt;div class="item-3"&gt;&lt;/div&gt;
+      &lt;div class="item-4"&gt;&lt;/div&gt;
+      &lt;div class="item-5"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="loader-container"&gt;
+    &lt;div class="loader-4"&gt;&lt;/div&gt;
+  &lt;/div&gt;    
+&lt;/main&gt;
+      </code>
+    </pre>
+    <pre id="css">
+      <h1>CSS</h1>
+      <code>
+body {
+    margin: 20px;
+}
+
+main {
+  background-color: #ff8000;
+}
+
+.circle {
+    background: green;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: pulsing 2s infinite;
+    margin-bottom: 30px;
+}
+
+@keyframes pulsing {
+    0% {
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      transform: scale(0.5, 0.5);
+    }
+}
+
+.loader-container {
+    font-size: 10px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    vertical-align: top;
+}
+  
+.loader-1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    margin: -25px auto 0;
+    border-radius: 50%;
+    background: #ffffff;
+    background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 50%);
+    position: relative;
+    animation: loader-1 1.5s infinite linear;
+    transform: translateZ(0);
+}
+  
+.loader-1:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    border-radius: 100% 0 0 0;
+}
+  
+.loader-1:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ff8000;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+@keyframes loader-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+.loader-2 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    position: relative;
+    animation: loader-2 0.9s 0.35s ease alternate infinite;
+    margin: -20px auto 0;
+}
+  
+.loader-2:after,
+.loader-2:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: loader-2 0.9s ease alternate infinite;
+}
+.loader-2:before {
+    left: -20px;
+    animation-delay: 0.2s;
+}
+.loader-2:after {
+    right: -20px;
+    animation-delay: 0.5s;
+}
+@keyframes loader-2 {
+    0% {
+      box-shadow: 0 15px 0 -15px #ffffff;
+    }
+    100% {
+      box-shadow: 0 15px 0 #ffffff;
+    }
+}
+  
+.loader-3 {
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: -30px auto 0;
+    text-align: center;
+}
+.loader-3 div {
+    background-color: #ffffff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    animation: loader-3 1.2s infinite ease-in-out;
+}
+.loader-3 .item-2 {
+    animation-delay: -1.1s;
+}
+.loader-3 .item-3 {
+    animation-delay: -1.0s;
+}
+.loader-3 .item-4 {
+    animation-delay: -0.9s;
+}
+.loader-3 .item-5 {
+    animation-delay: -0.8s;
+}
+@keyframes loader-3 {
+    0%,
+    40%,
+    100% {
+      transform: scaleY(0.4);
+    }
+    20% {
+      transform: scaleY(1.0);
+    }
+}
+
+.loader-4 {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    animation: loader-4 1s ease infinite;
+    top: 50%;
+    margin: -30px auto 0 auto;
+}
+  @keyframes loader-4 {
+    0%, 100% {
+      box-shadow: -10px 15px 0 #ffffff, 10px 15px 0 rgba(255, 255, 255, 0.2), 10px 36px 0 rgba(255, 255, 255, 0.2), -10px 36px 0 rgba(255, 255, 255, 0.2); }
+    25% {
+      box-shadow: -10px 15px 0 rgba(255, 255, 255, 0.2), 10px 15px 0 #ffffff, 10px 36px 0 rgba(255, 255, 255, 0.2), -10px 36px 0 rgba(255, 255, 255, 0.2); }
+    50% {
+      box-shadow: -10px 15px 0 rgba(255, 255, 255, 0.2), 10px 15px 0 rgba(255, 255, 255, 0.2), 10px 36px 0 #ffffff, -10px 36px 0 rgba(255, 255, 255, 0.2); }
+    75% {
+      box-shadow: -10px 15px 0 rgba(255, 255, 255, 0.2), 10px 15px 0 rgba(255, 255, 255, 0.2), 10px 36px 0 rgba(255, 255, 255, 0.2), -10px 36px 0 #ffffff; } }
+      </code>
+    </pre>
+  </div>
+</body>
+</html>

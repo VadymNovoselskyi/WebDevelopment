@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="transform.css">
+    <link rel="stylesheet" href="../../highlight/styles/vs2015.min.css">
+    <script src="../../highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Transition</title>
+</head>
+<body>
+    <header>
+        <a href="../../collectionOfAllMyWebsites/index.html#transform">
+            <button class="animated-button">
+                <span>Go back</span>
+            </button>
+        </a>
+    </header>
+    <div class="container">
+        <div id="code">
+            <div class="box-size">Size change</div>
+            <div class="box-colour">colour change</div>
+            <div class="box-spin">Spin</div>
+            <button>On click</button>
+        </div>
+    <pre id="html">
+        <h1>HTML</h1>
+        <code>
+&lt;div class="box-size"&gt;Size change&lt;/div&gt;
+&lt;div class="box-colour"&gt;colour change&lt;/div&gt;
+&lt;div class="box-spin"&gt;Spin&lt;/div&gt;
+&lt;button&gt;On click&lt;/button&gt;
+        </code>
+    </pre>
+    <pre id="css">
+        <h1>CSS</h1>
+        <code>
+.box-size {
+    width: 130px;
+    height: 130px;
+    background-color: #2196F3;
+    transition: 1s 100ms;
+}
+  
+.box-size:hover {
+    width: 230px;
+    height: 230px;
+}
+
+.box-spin {
+    margin: 100px;
+    border: 1px solid #000;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition: 2s;
+}
+
+.box-spin:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-180deg);
+}
+
+.box-colour {
+    width: 130px;
+    height: 130px;
+    color: blueviolet;
+    background-color: #61e49c;
+    transition: 1s 100ms;
+    text-align: center;
+}
+
+.box-colour:hover {
+    color: cornflowerblue;
+    background-color: rgb(154, 33, 158);
+    border-radius: 50%;
+}
+
+button {
+    border: 0;
+    background: #0087cc;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #006599;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+}
+button:active {
+    box-shadow: 0 2px 0 #006599;
+    transform: translateY(3px);
+}
+        </code>
+    </pre>
+</div>
+</body>
+</html>

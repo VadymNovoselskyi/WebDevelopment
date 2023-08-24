@@ -1,0 +1,83 @@
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0;
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a {
+    color: #000;
+}
+
+main {
+    padding: 48px;
+}
+
+.projects > div {
+  background-color: rgba(127, 102, 204, 0.8);
+  border: 3px solid rgb(127, 102, 204, 1);
+  padding: 24px 24px 36px 24px;
+  margin: 0 !important;
+  text-align: center;
+  max-width: 240px;
+  max-height: 300px;
+}
+
+h2 {
+    margin: 48px 0;
+    text-align: center;
+}
+
+
+.websites > div {
+    background-color: rgba(127, 102, 204, 0.8);
+    border: 3px solid rgb(127, 102, 204, 1);
+    padding: 24px 24px 36px 24px;
+    margin: 0 !important;
+    text-align: center;
+    max-width: 400px;
+    max-height: 500px;
+}
+
+.animated-button {
+  margin: 24px 24px 24px 0;
+  border-radius: 8px;
+  background-color: #916CFA;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+.animated-button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: #FFFFFF;
+}
+
+.animated-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.animated-button:hover span {
+  padding-right: 25px;
+}
+
+.animated-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

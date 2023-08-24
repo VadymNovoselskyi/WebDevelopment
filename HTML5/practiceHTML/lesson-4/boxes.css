@@ -1,0 +1,115 @@
+.test_1 {
+    border: 6px solid #576fd1;
+    height: 30px;
+    margin: 20px;
+    padding: 15px;
+    width: 80px;
+}
+
+.test_2 {
+    border: 6px #576fd1;
+    border-style: dashed;
+    height: 30px;
+    margin: 20px;
+    padding: 15px;
+    width: 80px;
+}
+
+.test_3 {
+    border: 6px #576fd1;
+    border-style: dotted;
+    height: 30px;
+    margin: 20px;
+    padding: 15px;
+    width: 80px;
+}
+
+.test_4 {
+    border: 6px #576fd1;
+    border-style: double;
+    height: 30px;
+    margin: 20px;
+    padding: 15px;
+    width: 80px;
+}
+
+.test_5 {
+    border: 6px #576fd1;
+    border-style: groove;
+    height: 30px;
+    margin: 20px;
+    padding: 15px;
+    width: 80px;
+}
+
+
+.animated-button {
+    margin: 24px 24px 24px 0;
+    border-radius: 8px;
+    background-color: #916CFA;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+  }
+  
+  .animated-button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: #FFFFFF;
+  }
+
+  .animated-button > a {
+    margin: 0;
+    padding: 28px 40px;
+}
+  
+  .animated-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;;
+    transition: 0.5s;
+  }
+  
+  .animated-button:hover span {
+    padding-right: 25px;
+  }
+  
+  .animated-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+.container {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-rows: auto;
+}
+
+#code {
+  margin-right: 24px;
+  padding: 0;
+  grid-column: 1;
+  grid-row: 1/2;
+}
+
+h1 {
+  margin: 0;
+}
+
+#html {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#css {
+  grid-column: 2;
+  grid-row: 2;
+}

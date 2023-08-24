@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pseudoClasses.css">
+    <link rel="stylesheet" href="../../../highlight/styles/vs2015.min.css">
+    <script src="../../../highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Pseudo classes</title>
+</head>
+<body>
+    <a href="../../../collectionOfAllMyWebsites/index.html#pseudoClasses">
+        <button class="animated-button">
+            <span>Go back</span>
+        </button>
+    </a>
+    <div class="container">
+        <div id="code">
+            <a href="#">Usual</a>
+            <a href="#" class="link">Link</a>
+            <a href="1" class="visited">Visited</a>
+            <a href="#" class="hover">Hover</a>
+            <a href="#" class="active">Active</a>
+            <a href="#" class="focus">Focus</a>
+        
+            <label>
+                Username
+                <input type="text" name="username" placeholder="Enabled" class="enabled">
+            </label>
+            <label>
+                Username
+                <input type="text" name="username" placeholder="Disabled" disabled class="disabled">
+            </label>
+        
+            <div>
+                <p>First child</p>
+                <p>Second child</p>
+                <p>Last child</p>
+            </div>
+        </div>
+    <pre id="html">
+        <h1>HTML</h1>
+        <code>
+            &lt;a href="#"&gt;Usual&lt;/a&gt;
+            &lt;a href="#" class="link"&gt;Link&lt;/a&gt;
+            &lt;a href="1" class="visited"&gt;Visited&lt;/a&gt;
+            &lt;a href="#" class="hover"&gt;Hover&lt;/a&gt;
+            &lt;a href="#" class="active"&gt;Active&lt;/a&gt;
+            &lt;a href="#" class="focus"&gt;Focus&lt;/a&gt;
+        
+            &lt;label&gt;
+                Username
+                &lt;input type="text" name="username" placeholder="Enabled" class="enabled"&gt;
+            &lt;/label&gt;
+            &lt;label&gt;
+                Username
+                &lt;input type="text" name="username" placeholder="Disabled" disabled class="disabled"&gt;
+            &lt;/label&gt;
+        
+            &lt;div&gt;
+                &lt;p&gt;First child&lt;/p&gt;
+                &lt;p&gt;Second child&lt;/p&gt;
+                &lt;p&gt;Last child&lt;/p&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+    <pre id="css">
+        <h1>CSS</h1>
+        <code>
+a {
+    display: block;
+    padding: 50px;
+    font-size: 32px;
+    text-decoration: none;
+}
+input {
+    display: block;
+    padding: 50px;
+    font-size: 32px;
+}
+label {
+    font-size: 32px;
+}
+
+::selection {
+    background: #ff7b29;
+}
+
+.link:link {
+    color: teal;
+}
+
+.visited:visited {
+    color: rgb(137, 23, 172);
+}
+
+.hover:hover {
+    color: rgba(0, 0, 0, 0.822);
+}
+
+.active:active {
+    color: rgb(84, 233, 103);
+}
+
+.focus:focus {
+    color: rgb(204, 35, 35);
+}
+
+.enabled:enabled {
+    background-color: blue;
+}
+
+.disabled:disabled {
+    background-color: red;
+}
+
+p:first-child {
+    color: red;
+}
+p:last-child {
+    color: green;
+}
+        </code>
+    </pre>
+</div>
+</body>
+</html>

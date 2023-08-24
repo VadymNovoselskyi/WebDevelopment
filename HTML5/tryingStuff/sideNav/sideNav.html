@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="sideNav.css">
+    <title>Side navigation</title>
+    <link rel="stylesheet" href="../../../highlight/styles/vs2015.min.css">
+    <script src="../../../highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <a href="../../../collectionOfAllMyWebsites/index.html#sideNav">
+        <button class="animated-button">
+            <span>Go back</span>
+        </button>
+        </a>
+        <div class="container">
+            <div id="code">
+                <div id="mySidenav" class="sidenav">
+                    <a href="#" id="about">About</a>
+                    <a href="#" id="blog">Blog</a>
+                    <a href="#" id="projects">Projects</a>
+                    <a href="#" id="contact">Contact</a>
+                  </div>
+            </div>
+        <pre id="html">
+            <h1>HTML</h1>
+            <code>
+&lt;div id="mySidenav" class="sidenav"&gt;
+    &lt;a href="#" id="about"&gt;About&lt;/a&gt;
+    &lt;a href="#" id="blog"&gt;Blog&lt;/a&gt;
+    &lt;a href="#" id="projects"&gt;Projects&lt;/a&gt;
+    &lt;a href="#" id="contact"&gt;Contact&lt;/a&gt;
+&lt;/div&gt;
+            </code>
+        </pre>
+        <pre id="css">
+            <h1>CSS</h1>
+            <code>
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.5s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+#mySidenav a:hover {
+    left: 0;
+}
+
+#about {
+    top: 20px;
+    background-color: #04AA6D;
+}
+
+#blog {
+top: 80px;
+background-color: #2196F3; 
+}
+
+#projects {
+top: 140px;
+background-color: #f44336;
+}
+
+#contact {
+top: 200px;
+background-color: #555;
+}
+            </code>
+        </pre>
+        </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="../../../highlight/styles/vs2015.min.css">
+    <script src="../../../highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Loader</title>
+</head>
+<body>
+    <a href="../../../collectionOfAllMyWebsites/index.html#loader">
+        <button class="animated-button">
+            <span>Go back</span>
+        </button>
+        </a>
+        <div class="container">
+            <div id="code">
+                <div class="loader-1"></div>
+                <div class="loader-2"></div>
+                <div class="loader-3"></div>
+                <div class="loader-4"></div>
+            </div>
+        <pre id="html">
+            <h1>HTML</h1>
+            <code>
+&lt;div class="loader-1"&gt;&lt;/div&gt;
+&lt;div class="loader-2"&gt;&lt;/div&gt;
+&lt;div class="loader-3"&gt;&lt;/div&gt;
+&lt;div class="loader-4"&gt;&lt;/div&gt;
+            </code>
+        </pre>
+        <pre id="css">
+            <h1>CSS</h1>
+            <code>
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-1 {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 20px;
+}
+
+.loader-2 {
+    border: 16px solid black;
+    border-top: 16px solid #3498db; 
+    border-bottom: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 20px;
+}
+
+.loader-3 {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid blue; 
+    border-right: 16px solid red; 
+    border-bottom: 16px solid green;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 20px;
+}
+
+.loader-4 {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid blue; 
+    border-right: 16px solid red; 
+    border-bottom: 16px solid green;
+    border-left: 16px solid purple;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 20px;
+
+            </code>
+        </pre>
+        </div>
+</body>
+</html>
