@@ -1,0 +1,19 @@
+.front {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    height: 358px;
+    width: 246.5px;
+    display: block;
+}
+
+.side {
+    border: 2px solid #000000;
+    position: relative;
+    left: 550px;
+    top: -262px;
+    height: 358px;
+    width: 10px;
+    display: block;
+}

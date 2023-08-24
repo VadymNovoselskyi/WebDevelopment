@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+}
+
+a {
+    color: #000;
+}
+
+a:focus {
+    outline: none;
+}
+
+header a, footer a {
+    color: #dfdaf0;
+}
+
+header a:visited, footer a:visited {
+    color: #dfdaf0;
+}
+
+.page {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+
+header {
+    text-align: center;
+    background-color: #916CFA;
+    padding: 12px;
+    color: #f0f8ff;
+    grid-row: 1;
+}
+
+img {
+    margin-top: 24px;
+    width: 260px;
+    height: auto;
+}
+
+main {
+    padding: 48px;
+    grid-row: 2;
+    background-color: #271c49;
+}
+
+.projects {
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    column-gap: 48px;
+}
+
+.projects > div {
+    background-color: rgba(127, 102, 204, 0.8);
+    border: 3px solid rgb(127, 102, 204, 1);
+    padding: 24px 24px 36px 24px;
+    text-align: center;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+div > h3 {
+    font-size: 22px;
+}
+
+div > p {
+    font-size: 18px;
+}
+
+.project_1 {
+    grid-column: 1;
+
+}
+
+.project_2 {
+    grid-column: 2;
+}
+
+.project_3 {
+    grid-column: 3;
+}
+
+h2 {
+    margin: 96px 0;
+    text-align: center;
+    color: #dfdaf0;
+}
+
+.websites {
+    columns: 4;
+    column-gap: 24px;
+}
+
+.websites > div {
+    text-align: center;
+    background-color: rgba(127, 102, 204, 0.8);
+    border: 3px solid rgb(127, 102, 204, 1);
+    padding: 24px 24px 36px 24px;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+
+footer {
+    background-color: #916CFA;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+    grid-row: 3;
+}

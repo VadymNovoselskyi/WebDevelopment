@@ -1,0 +1,150 @@
+.top-front {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: 600px;
+    height: 10.45px;
+    width: 825px;
+    display: block;
+}
+
+.under-front {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: 599px;
+    height: 16.95px;
+    width: 825px;
+    display: block;
+}
+
+.under-side-left-front {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: 578px;
+    height: 16.95px;
+    width: 11.2px;
+    display: block;
+}
+.under-side-right-front {
+    border: 2px solid #000000;
+    position: relative;
+    left: 914px;
+    top: 557px;
+    height: 16.95px;
+    width: 11.2px;
+    display: block;
+}
+
+
+
+.leg-left-front {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: 555px;
+    height: 348.55px;
+    width: 16.2px;
+    display: block;
+}
+
+.leg-right-front {
+    border: 2px solid #000000;
+    position: relative;
+    left: 909px;
+    top: 202.5px;
+    height: 348.55px;
+    width: 16.2px;
+    display: block;
+}
+
+
+
+.top-bottom {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: -650px;
+    height: 348.6px;
+    width: 825px;
+    display: block;
+}
+
+.cant-left-bottom {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: -1002px;
+    height: 348.6px;
+    width: 11.2px;
+    display: block;
+}
+.cant-top-bottom {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: -1355px;
+    height: 11.2px;
+    width: 825px;
+    display: block;
+}
+.cant-right-bottom {
+    border: 2px solid #000000;
+    position: relative;
+    left: 914px;
+    top: -1370.4px;
+    height: 348.6px;
+    width: 11.2px;
+    display: block;
+}
+.cant-bottom-bottom {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: -1385px;
+    height: 11.2px;
+    width: 825px;
+    display: block;
+}
+
+.leg-1-bottom {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: -1737px;
+    height: 16.2px;
+    width: 16.2px;
+    border-radius: 50%;
+    display: block;
+}
+.leg-2-bottom {
+    border: 2px solid #000000;
+    position: relative;
+    left: 909px;
+    top: -1758px;
+    height: 16.2px;
+    width: 16.2px;
+    border-radius: 50%;
+    display: block;
+}
+.leg-3-bottom {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: -1447px;
+    height: 16.2px;
+    width: 16.2px;
+    border-radius: 50%;
+    display: block;
+}
+.leg-4-bottom {
+    border: 2px solid #000000;
+    position: relative;
+    left: 909px;
+    top: -1466px;
+    height: 16.2px;
+    width: 16.2px;
+    border-radius: 50%;
+    display: block;
+}

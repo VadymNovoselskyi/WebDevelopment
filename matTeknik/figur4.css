@@ -1,0 +1,43 @@
+.above { 
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    height: 51.7px;
+    width: 51.7px;
+    border-radius: 50%;
+    display: block;
+}
+
+
+.cylinder-front {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: 168px;
+    height: 346.5px;
+    width: 51.7px;
+    display: block;
+}
+
+.holm-top-front {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: -186px;
+    height: 1.75px;
+    width: 51.7px;
+    border-radius: 50% 50% 0 0;
+    display: block;
+}
+
+.holm-bottom-front {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: 160px;
+    height: 1.75px;
+    width: 51.7px;
+    border-radius: 0 0 50% 50%;
+    display: block;
+}

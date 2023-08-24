@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+    <div class="cards">
+      <div class="card" data-description="Wes is cool">
+        <img src="https://picsum.photos/200?random=1" alt="Wes Bos">
+        <h2>Wes Bos</h2>
+        <button>Learn more →</button>
+      </div>
+      <div class="card" data-description="Scott is neat!">
+        <img src="https://picsum.photos/200?random=2" alt="Wes Bos">
+        <h2>Scott Tolinski</h2>
+        <button>Learn more →</button>
+      </div>
+      <div class="card" data-description="Kait is beautiful!">
+        <img src="https://picsum.photos/200?random=3" alt="Wes Bos">
+        <h2>Kait Bos</h2>
+        <button>Learn more →</button>
+      </div>
+      <div class="card" data-description="Snickers is a dog!">
+        <img src="https://picsum.photos/200?random=4" alt="Wes Bos">
+        <h2>Snickers the dog</h2>
+        <button>Learn more →</button>
+      </div>
+
+    </div>
+
+  <div class="modal-outer">
+    <div class="modal-inner">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus provident eum nesciunt aut! Eos aut animi error natus repellat voluptates illo perferendis, voluptatibus voluptatum ab numquam ducimus recusandae alias excepturi, corrupti dignissimos, rem quibusdam praesentium reiciendis eius? Voluptate debitis excepturi ea id quas neque nobis, blanditiis animi provident asperiores tempora modi impedit consectetur iste, quasi doloribus, possimus ipsum expedita quam eos eum deserunt ullam doloremque. Sed illum nam adipisci quas distinctio tempora ullam recusandae veritatis praesentium ipsam! Laborum minima distinctio enim alias, nemo asperiores ipsum, totam ipsam laboriosam vero similique ducimus. Vel dolorem nihil, eius corrupti enim aliquid vitae?</p>
+    </div>
+  </div>
+
+  <style>
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
+        gap: 48px;
+        padding: 24px;
+    }
+
+    .card {
+        background-color: #555;
+        padding: 24px;
+        border-radius: 2px;
+    }
+
+    .card h2 {
+        color: #fff;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .modal-outer {
+        display: grid;
+        background: rgba(0, 0, 0, 0.2);
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0,3s;
+    }
+
+    .modal-outer.open {
+        opacity: 1 ;
+        pointer-events: all;    
+    }
+
+    .modal-inner {
+        min-width: 40vw;
+        max-width: 60vw;
+        min-height: 50vh;
+        padding: 24px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .close-button {
+      display: block;
+      margin: 0 12px 12px 0;
+    }
+  </style>
+  <script src="./clickOutside.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background: url(bg.jpeg) repeat 0 0 ;
+}
+
+.main {
+    width: 620px;
+    height: 400px;
+    margin: calc(50vh - 150px) auto;
+}
+
+@media all and (max-width: 1200px) {
+    .main { 
+        height: 90vh;
+        width: 70vw;
+        margin: 5vh auto;
+    }
+}
+
+.header {
+    color: #fff;
+    background-color: rgb(59, 40, 40);
+    font-size: 40px;
+    text-align: center;
+    grid-row: 1;
+}
+
+.content {
+    color: blue;
+    background-color: rgb(146, 66, 66);
+    grid-row: 2;
+    text-align: center;
+    font-size: 46px;
+}
+
+.footer {
+    color: #fff;
+    background-color: rgb(59, 40, 40);
+    font-size: 40px;
+    text-align: center;
+    grid-row: 3;
+}
+
+
+.animated-button {
+    margin: 48px 48px 48px 0;
+    border-radius: 8px;
+    background-color: #916CFA;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+}
+  
+.animated-button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: #FFFFFF;
+}
+  
+.animated-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.animated-button:hover span {
+    padding-right: 25px;
+}
+  
+.animated-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

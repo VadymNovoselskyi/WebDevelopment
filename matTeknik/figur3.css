@@ -1,0 +1,123 @@
+.top-circle-above {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: 578px;
+    height: 101px;
+    width: 101px;
+    border-radius: 50%;
+    display: block;
+}
+
+.hole-above {
+    position: relative;
+    border: 2px solid #000000;
+    left: 136.7px;
+    top: 434px;
+    height: 65.5px;
+    width: 28px;
+    display: block;
+    background-color: #ffffff;
+  
+}
+
+.bottom-circle-above {
+    border: 2px dotted #000000;
+    position: relative;
+    left: 115.5px;
+    top: 487.9px;
+    height: 70.3px;
+    width: 70.3px;
+    border-radius: 50%;
+    display: block;
+}
+
+.fixing-above {
+    background-color: #ffffff;
+    position: relative;
+    left: 130px;
+    top: 431.5px;
+    height: 20px;
+    width: 180px;
+    display: block;
+}
+
+
+.top-circle-front {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100.35px;
+    top: -28px;
+    height: 30.9px;
+    width: 101px;
+    display: block;
+  
+}
+
+.hole-front {
+    position: relative;
+    border: 2px solid #000000;
+    left: 136.7px;
+    top: -286px;
+    height: 252px;
+    width: 28px;
+    display: block;
+    background-color: #ffffff;
+  
+}
+
+.cylinder-front {
+    border: 2px solid #000000;
+    position: relative;
+    left: 115.5px;
+    top: -30px;
+    height: 219.1px;
+    width: 70.3px;
+    display: block;
+}
+
+
+.top-circle-bottom {
+    border: 2px solid #000000;
+    position: relative;
+    left: 100px;
+    top: -728px;
+    height: 101px;
+    width: 101px;
+    border-radius: 50%;
+    display: block;
+  
+}
+
+.hole-bottom {
+    position: relative;
+    border: 2px solid #000000;
+    left: 136.7px;
+    top: -907px;
+    height: 65.5px;
+    width: 28px;
+    display: block;
+    background-color: #ffffff;
+  
+}
+
+.bottom-circle-bottom {
+    border: 2px solid #000000;
+    position: relative;
+    left: 115.5px;
+    top: -817.9px;
+    height: 70.3px;
+    width: 70.3px;
+    border-radius: 50%;
+    display: block;
+}
+
+.fixing-bottom {
+    background-color: #ffffff;
+    position: relative;
+    left: 130px;
+    top: -993.84px;
+    height: 20px;
+    width: 180px;
+    display: block;
+}
