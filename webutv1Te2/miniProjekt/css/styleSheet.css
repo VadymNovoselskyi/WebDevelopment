@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background: url(../img/ic.png);
+  padding-bottom: 0.1rem;
+}
+
+header h1 {
+  color: #ffffff;
+  padding-left: 0.4rem;
+}
+
+header h2 {
+  color: #ffffff;
+  padding-left: 2rem;
+}
+
+.mark {
+    color: #808080;
+}
+
+header li {
+  display: inline;
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #808080;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  margin: 0 0.6rem;
+}
+
+header li:not(.mark):hover {
+  background-color: #808080;
+}
+
+header nav {
+    margin: 0.4rem 0;
+}
+
+header a {
+  color: #ffffff;
+}
+
+
+main {
+  padding: 1rem 0; 
+}
+
+article {
+  margin: 0 1rem;
+}
+
+section {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin-left: 1.5%;
+}
+
+main section h2 {
+  display: inline;
+  color: #ffffff;
+  padding: 0.1rem;
+}
+
+main p {
+  padding: 0.1rem;
+}
+
+#html5 {
+  border: 0.2rem #ff0000 solid;
+}
+
+#html5 h2 {
+  background-color: #ff0000;
+}
+
+
+#css3 {
+  border: 0.2rem #008000 solid;
+}
+
+#css3 h2 {
+  background-color: #008000;
+}
+
+
+#about {
+  border: 0.2rem #0000ff solid;
+}
+
+#about h2 {
+  background-color: #0000ff;
+}
+
+
+main a {
+  float: right;
+  background-color: #808080;
+  color: #ffffff;
+}
+
+
+#myImage {
+  display: inline-block;
+}
+
+#aboutMe {
+  vertical-align: top;
+  display: inline-block;
+  width: 36%;
+}
+
+#facts {
+  vertical-align: top;
+  display: inline-block;
+  border: #808080 2px solid;
+  border-radius: 0.8rem;
+  width: auto;
+}
+
+#facts h3 {
+  margin: 0.2rem;
+}
+
+#facts p {
+  margin: 0.1rem 0.4rem;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin: 1rem;
+}
+
+th,
+td {
+  text-align: left;
+  border: 2px solid #bdbdbd;
+  padding: 0.2rem 0.8rem;
+}
+
+th:first-child,
+td:first-child {
+  border-right: 0;
+  padding-right: 10rem;
+}
+
+th:last-child,
+td:last-child {
+  border-left: 0;
+  padding-right: 6rem;
+}
+
+tbody tr:nth-child(odd) {
+  background: #f0f0f0;
+}
+
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 6.6rem;
+}
+
+footer address {
+  display: inline-block;
+}
+
+footer nav {
+  float: right;
+}
+
+footer li {
+  list-style-type: none; 
+}
+
+footer .mark {
+  color: #ffffff;
+  list-style-type: square;
+}
+
+footer a {
+  color: #808080;
+}
+
+footer a:not(.mark):hover {
+  color: #ff0000;
+}
+
+
+a {
+  text-decoration: none;
+}
