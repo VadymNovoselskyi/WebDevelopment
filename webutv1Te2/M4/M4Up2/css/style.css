@@ -1,77 +1,78 @@
 * {
-    box-sizing: border-box;
-    margin: 0; padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
  }
  
  html {
-    font-size: 62.5%
+   font-size: 62.5%;
  }
  
- body{
-    font-size: 1.4rem;
-    font-family: Arial, Verdana, sans-serif;
-    margin:auto;
-    background-color: #f1faee;
+ body {
+   font-size: 1.4rem;
+   font-family: Arial, Verdana, sans-serif;
+   margin: auto;
+   background-color: #f1faee;
  }
-
+ 
  header {
-    background-color: #000814;
-    color: #f1faee;
-    padding: 1rem 2rem;
+   background-color: #000814;
+   color: #f1faee;
+   padding: 1rem 2rem;
  }
-
+ 
  main {
-    padding: 3rem 2rem;
+   padding: 3rem 2rem;
  }
-
+ 
  section {
-    padding: 1rem;
-    color: #000814;
+   padding: 1rem;
+   color: #000814;
  }
-
+ 
  footer {
-    background-color: #000814;
-    color: #f1faee;
-    padding: 1rem 2rem;
+   background-color: #000814;
+   color: #f1faee;
+   padding: 1rem 2rem;
  }
-
-
+ 
  section.dark-purple {
-    background-color: #734F5A;
-    border: 0.1rem solid #734F5A;
+   background-color: #734f5a;
+   border: 0.1rem solid #734f5a;
  }
-
+ 
  section.dark-cyan {
-    background-color: #264653;
-    border: 0.1rem solid #264653;
+   background-color: #264653;
+   border: 0.1rem solid #264653;
  }
-
+ 
  section.cyan {
-    background-color: #2A9D8F;
-    border: 0.1rem solid #2A9D8F;
+   background-color: #2a9d8f;
+   border: 0.1rem solid #2a9d8f;
  }
-
+ 
  section.dark-yellow {
-    background-color: #E9C46A;
-    border: 0.1rem solid #E9C46A;
+   background-color: #e9c46a;
+   border: 0.1rem solid #e9c46a;
  }
-
+ 
  section.dark-orange {
-    background-color: #F4A261;
-    border: 0.1rem solid #F4A261;
+   background-color: #f4a261;
+   border: 0.1rem solid #f4a261;
  }
-
+ 
  section.tomato {
-    background-color: #E76F51;
-    border: 0.1rem solid #E76F51;
+   background-color: #e76f51;
+   border: 0.1rem solid #e76f51;
  }
-
+ 
  section.dark-red {
-    background-color: #941C2F;
-    border: 0.1rem solid #941C2F;
+   background-color: #941c2f;
+   border: 0.1rem solid #941c2f;
  }
-
+ 
  section.light-brown {
-    background-color: #C05761;
-    border: 0.1rem solid #C05761;
+   background-color: #c05761;
+   border: 0.1rem solid #c05761;
  }
+ 
