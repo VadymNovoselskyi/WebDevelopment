@@ -4,10 +4,11 @@ body {
     height: 100vh;
 }
 
-main {
+.mainGrid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
+    grid-auto-rows: minmax(50px, 1fr);
+    gap: 1.6rem;
     grid-auto-flow: dense;
 }
 
@@ -55,6 +56,10 @@ main {
     .row-t-3{grid-row: span 3;}
     .row-t-4{grid-row: span 4;}
     .row-t-5{grid-row: span 5;}
+
+    .mainGrid {
+        gap: 2rem;
+    }
  }
 
 
