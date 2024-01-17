@@ -6,6 +6,7 @@
   
 html {
     font-size: 62.5%;
+    width: 100vw;
 }
 
 body {
@@ -34,20 +35,16 @@ header {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
 }
 
 .menu li {
-    padding: 0.6rem 0;
-    width: 100%;
+    padding: 0.6rem 0;  
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .menu li a {
     display: block;
-    width: 100%;
-    text-align: center;
 }
 
 .activeHeader a {
@@ -97,6 +94,10 @@ table {
   td {
     border: 1px solid #cecfd5;
     padding: 1rem 2rem;
+}
+
+.desktopTable {
+    display: none;
 }
 
 footer {
