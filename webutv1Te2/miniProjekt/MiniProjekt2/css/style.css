@@ -195,6 +195,16 @@ td {
   background-color: #faf0ca;
 }
 
+.myImg {
+  max-width: 20vw;
+}
+
+label {
+  font-size: 1.4rem;
+  color: #2b2d42;
+}
+
+
 footer {
   background-color: #2b2d42;
   padding: 1rem;
