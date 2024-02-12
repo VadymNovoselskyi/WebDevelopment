@@ -43,12 +43,24 @@
       <p>
         Down below you can see a table with three best foods from every type of meal.
       </p>
+
+      <style>
+        tbody:nth-child(odd) tr:nth-child(2n) {
+          color: red;
+        }
+        tbody:nth-child(even) tr:nth-child(2n + 3) {
+          color: red;
+        }
+    
+      </style>
+
       <!-- table för mobiltelefoner -->
       <table class="mobileTable">
         <tbody>
-          <tr>
+          <tr class="test">
             <td rowspan="4"><strong>Breakfast</strong></td>
           </tr>
+
           <tr class="striped">
             <td>1. Toast with chicken</td>
             <td>9/10</td>
@@ -61,7 +73,10 @@
             <td>3. Pancakes</td>
             <td>9/10</td>
           </tr>
-          <tr>
+          </tbody>
+
+          <tbody>
+          <tr class="test">
               <td rowspan="4"><strong>Lunch</strong></td>
           </tr>
           <tr>
@@ -76,7 +91,9 @@
             <td>3. Pizza</td>
             <td>9/10</td>
           </tr>
-          <tr>
+        </tbody> 
+        <tbody>  
+          <tr class="test">
               <td rowspan="4"><strong>Soups</strong></td>
           </tr>
           <tr class="striped">
@@ -91,10 +108,12 @@
             <td>3. Chicken noodle soup</td>
             <td>8/10</td>
           </tr>
-          <tr>
+        </tbody>   
+        <tbody>
+          <tr class="test">
               <td rowspan="4"><strong>Desserts</strong></td>
           </tr>
-          <tr>
+          <tr class="test">
             <td>1. Chocolate cake</td>
             <td>10/10</td>
           </tr>
@@ -108,49 +127,6 @@
           </tr>
         </tbody>
       </table>
-      <!-- Table för surfplattor och datorer -->
-      <!-- <table class="desktopTable">
-        <thead>
-          <tr>
-            <th scope="col" colspan="2">Breakfast</th>
-            <th scope="col" colspan="2">Lunch</th>
-            <th scope="col" colspan="2">Soups</th>
-            <th scope="col" colspan="2">Desserts</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1. Toast with chicken</td>
-            <td> 10/10</td>
-            <td>1. Hamburgers</td>
-            <td> 10/10</td>
-            <td>1. Borscht</td>
-            <td> 9/10</td>
-            <td>1. Chocolate cake</td>
-            <td> 10/10</td>
-          </tr>
-          <tr>
-            <td>2. Sandwich with ham</td>
-            <td> 9/10</td>
-            <td>2. Shawarma</td>
-            <td> 10/10</td>
-            <td>2. Okroshka</td>
-            <td> 8/10</td>
-            <td>2. Ice cream</td>
-            <td> 10/10</td>
-          </tr>
-          <tr>
-            <td>3. Pancakes</td>
-            <td> 9/10</td>
-            <td>3. Pizza</td>
-            <td> 9/10</td>
-            <td>3. Chicken noodle soup</td>
-            <td> 8/10</td>
-            <td>3. Tiramisu</td>
-            <td> 10/10</td>
-          </tr>
-        </tbody>
-      </table> -->
     </main>
 
     <footer>

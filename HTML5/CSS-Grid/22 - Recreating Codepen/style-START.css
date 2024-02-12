@@ -49,4 +49,7 @@ header {
 .button {
   height: 40px;
   background-color: #323233;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 0;
 }
