@@ -196,8 +196,11 @@ td {
   padding: 1rem 2rem;
 }
 
-.striped {
-  background-color: #faf0ca;
+tbody:nth-child(odd) tr:nth-child(2n + 2) {
+  background-color: #fafca0;
+}
+tbody:nth-child(even) tr:nth-child(2n + 3) {
+  background-color: #fafca0;
 }
 
 .aboutMeGrid {
