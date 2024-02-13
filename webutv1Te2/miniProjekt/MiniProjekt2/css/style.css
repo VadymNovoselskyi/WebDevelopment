@@ -23,6 +23,11 @@ header {
   padding: 1rem;
 }
 
+footer .title {
+  text-align: center;
+  padding: 0.8rem 0;
+}
+
 .pageTitle {
   padding: 1rem;
 }
@@ -122,7 +127,7 @@ main {
 
 @media (min-width: 768px) {
   main {
-    padding: 3rem;
+    padding: 3rem 4rem;
   }
   .mainGrid {
     max-width: none;
@@ -195,8 +200,33 @@ td {
   background-color: #faf0ca;
 }
 
-.myImg {
-  max-width: 20vw;
+.aboutMeGrid {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  grid-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .aboutMeGrid {
+    grid-template-columns: 6fr 4fr;
+  }
+}
+
+#myImg {
+  max-width: 50vw;
+  grid-column: 2;
+  grid-row: 1/6;
+}
+
+.aboutCatGrid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+}
+
+#myCatImg {
+  max-height: 40vw;
+  grid-row: 1/4;
 }
 
 label {
@@ -224,12 +254,3 @@ a {
   color: #f5f5f5;
 }
 
-
-/* @media (min-width: 980px) {
-  .mobileTable {
-    display: none;
-  }
-  .desktopTable {
-    display: table;
-  }
-} */
