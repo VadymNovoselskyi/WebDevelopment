@@ -1,0 +1,46 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+
+nav {
+  padding-bottom: 16rem;
+}
+nav ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+
+#thumbs {
+  padding: 0;
+}
+
+#thumbs li {
+  list-style-type: none;
+  display: inline-block;
+  border: 2px solid grey;
+}
+
+#thumbs li img {
+  display: block; /** tar bort utrymmet i botten på bilden */
+}
+
+#largeImg {
+  border: 2px solid grey;
+}
+
+
+a {
+  text-decoration: none;
+  color: blue;
+}
