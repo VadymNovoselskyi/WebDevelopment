@@ -90,17 +90,17 @@ function calc() {
 
 
 //uppg7
-let section7 = document.getElementsByTagName('section')[6];
-let p7 = section7.getElementsByTagName('p');
+const section7 = document.getElementsByTagName('section')[6];
+const p7 = section7.getElementsByTagName('p');
 console.log(p7);
 
 for(let i = 0; i < p7.length; i++) {
     p7[i].onclick = changeBG;
 }
 
-let isGrey = true
+let isGrey = false
 function changeBG() {
-    if(isGrey) {
+    if(!isGrey) {
         for(let i = 0; i < p7.length; i++) {
             p7[i].style.backgroundColor = "grey";
         }
